@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neurónio Singular, LDA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Adicione aqui qualquer estilo personalizado para a imagem, se necessário */
+        .logo-container {
+            display: flex;
+            flex-direction: column; /* Coloca os elementos em coluna por padrão */
+            align-items: center; /* Centra horizontalmente */
+            justify-content: center;
+            text-align: center;
+        }
+        .logo-container img {
+            max-width: 200px; /* Ajuste o tamanho do logótipo conforme preferir */
+            height: auto;
+            margin-bottom: 1rem; /* Espaçamento entre o logótipo e o texto */
+        }
+        /* Ajuste para ecrãs maiores */
+        @media (min-width: 768px) {
+            .logo-container {
+                flex-direction: row; /* Volta a alinhar em linha em ecrãs maiores */
+                gap: 2rem; /* Espaçamento entre o logótipo e o texto */
+            }
+            .logo-container h1, .logo-container p {
+                text-align: left; /* Alinha o texto à esquerda quando em linha */
+            }
+        }
+    </style>
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
 
     <header class="bg-white shadow-sm border-b-4 border-blue-600">
         <div class="container mx-auto px-6 py-8 text-center">
-            <h1 class="text-3xl font-bold text-slate-800 uppercase tracking-wider">Neurónio Singular, LDA</h1>
-            <p class="text-blue-600 italic mt-2">“Prestação de serviços médicos de radiologia e telerradiologia”</p>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logótipo Neurónio Singular, LDA"> <div>
+                    <h1 class="text-3xl font-bold text-slate-800 uppercase tracking-wider">Neurónio Singular, LDA</h1>
+                    <p class="text-blue-600 italic mt-2">“Prestação de serviços médicos de radiologia e telerradiologia”</p>
+                </div>
+            </div>
         </div>
     </header>
 
